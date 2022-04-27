@@ -1,2 +1,2 @@
 cd ..
-nasm bootloader.asn -f bin -o bootloader.flp
+nasm bootloader.asm -f bin -o flp/bootloader.flp
