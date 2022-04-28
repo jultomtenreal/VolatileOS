@@ -10,8 +10,14 @@ jmp $
 
 PrintString:
     mov ah, 0x0e
-    mov al, [bx]
-    int 0x10
+    .Loop:
+    cmp [bx], byte 0
+    je .Exit ; jump if at the end of the string
+        mov al, [bx]
+        int 0x10
+        inc bx
+        jmp .Loop
+    .Exit:
     ret
 
 TestString:
@@ -20,6 +26,6 @@ TestString:
 times 510-($-$$) db 0  ;magic boot code defining the stuff to 0 cus it needs to be 512 bytes long
 dw 0xaa55
 
-; part 2
-
-; just look at part 2
+; Something is wrong i think
+; cool
+; Part 2 7:25
