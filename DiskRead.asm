@@ -1,7 +1,7 @@
 PROGRAM_SPACE equ 0x7e00
 
 ReadDisk:
-    mov bx PROGRAM_SPACE
+    mov bx, PROGRAM_SPACE
     mov al, 4
     mov dl, [BOOT_DISK]
     mov ch, 0x00
