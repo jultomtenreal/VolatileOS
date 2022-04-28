@@ -26,6 +26,5 @@ TestString:
 times 510-($-$$) db 0  ;magic boot code defining the stuff to 0 cus it needs to be 512 bytes long
 dw 0xaa55
 
-; Something is wrong i think
-; cool
-; Part 2 7:25
+
+; IT WORKED
