@@ -10,7 +10,3 @@ PrintString:
         jmp .Loop
     .Exit:
     ret
-
-TestString:
-    db 'This is a test sussy string sussy imposter sus',0
-; ඞ
