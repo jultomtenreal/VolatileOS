@@ -22,6 +22,7 @@ EnableA20:
 [bits 32]
 
 StartProtectedMode:
+
     mov ax, dataseg
     mov ds, ax
     mov ss, ax

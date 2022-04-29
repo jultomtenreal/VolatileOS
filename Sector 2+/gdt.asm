@@ -8,7 +8,6 @@ gdt_codedesc:
     db 10011010b    ; flags
     db 11001111b    ; falgs + upper limit
     db 0x00         ; base (high)
-
 gdt_datadesc:
     dw 0xFFFF
     dw 0x0000
